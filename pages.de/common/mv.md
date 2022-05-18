@@ -1,28 +1,25 @@
 # mv
 
-> Verschiebe Dateien oder Verzeichnisse oder benenne diese um.
-> Weitere Informationen: <https://www.gnu.org/software/coreutils/mv>.
+> Dateien oder Verzeichnisse verschieben und/oder umbenennen.
+> Alle Flags können sowohl beim verschieben und/oder umbenennen von Dateien als auch Verzeichnissen genutzt werden.
 
-- Verschiebe eine Datei an einen beliebigen Ort:
 
-`mv {{pfad/zu/datei}} {{pfad/zu/zieldatei}}`
+- Datei umbennen:
 
-- Verschiebe mehrere Dateien in ein anderes Verzeichnis und behalte deren Namen bei:
+`mv pfad/zur/datei pfad/zur/zieldatei`
 
-`mv {{datei1}} {{datei2}} {{datei3}} {{pfad/zu/ziel_verzeichnis}}`
+- Verschieben mehrerer Dateien in ein neues Verzeichnis (Namen der Dateien werden beibeihalten):
 
-- Überschreibe bereits existierende Dateien ohne vorherige Bestätigung:
+`mv datei1 datei2 datei3 pfad/zum/neuen/verzeichnis`
 
-`mv -f {{pfad/zu/datei}} {{pfad/zu/zieldatei}}`
+- Überschreiben einer Datei inkl. Bestätigungsaufforderung
 
-- Überschreibe bereits existierende Dateien nach Bestätigung (unabhängig von Dateirechten):
+`mv -i pfad/zur/datei pfad/zur/zieldatei`
 
-`mv -i {{pfad/zu/datei}} {{pfad/zu/zieldatei}}`
+- Verschieben einer Datei mit Angaben zur durchgeführten Aktion und dem neuen Dateinamen:
 
-- Verhindere das Überschreiben existierender Dateien am Zielort:
+`mv -v pfad/zur/datei pfad/zur/zieldatei`
 
-`mv -n {{pfad/zu/datei}} {{pfad/zu/zieldatei}}`
+- Verschieben eines Verzeichnisses:
 
-- Liste Dateien und deren Details auf während sie verschoben werden:
-
-`mv -v {{pfad/zu/datei}} {{pfad/zu/zieldatei}}`
+`mv tolles/verzeichnis1 tolles/verzeichnis2`
